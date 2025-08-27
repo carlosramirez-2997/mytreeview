@@ -1,0 +1,21 @@
+{
+  "name": "Scotiabank",
+  "type": "Head_BL",
+  "hier_id": null,
+  "selected": true,
+  "depth": 0,
+  "node_key": 0,
+  "parent_id": null,
+  "children": [
+    {
+      "name": "GBM",
+      "type": "BL",
+      "hier_id": 124,
+      "selected": false,
+      "depth": 1,
+      "node_key": 1,
+      "parent_id": null,
+      "children": []
+    }
+  ]
+}
