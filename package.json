@@ -17,7 +17,12 @@
     "@types/node": "^16.18.126",
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
+    "boostrap": "^2.0.0",
+    "bootstrap": "^5.3.8",
+    "d3": "^7.9.0",
     "react": "^19.1.1",
+    "react-bootstrap": "^2.10.10",
+    "react-bootstrap-typeahead": "^6.4.1",
     "react-d3-tree": "^3.6.6",
     "react-dom": "^19.1.1",
     "react-scripts": "^5.0.1",
@@ -47,5 +52,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/d3": "^7.4.3"
   }
 }
