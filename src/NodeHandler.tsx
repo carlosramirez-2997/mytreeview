@@ -183,14 +183,6 @@ const NodeHandler: React.FC<TreeNodeProps> = ({
 
   return (
     <div className="container mt-4">
-      <div className="d-flex justify-content-between align-items-center mb-3">
-        <h4>{node.name}</h4>
-        <div>
-          <button className="btn btn-primary btn-sm me-2">+ Add</button>
-          <button className="btn btn-secondary btn-sm">✎ Edit</button>
-        </div>
-      </div>
-
       <div className="mb-3">
         <p>
           <strong>Business Line:</strong> {String(node.hier_id ?? "")}

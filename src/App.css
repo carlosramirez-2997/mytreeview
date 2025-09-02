@@ -75,8 +75,8 @@ body,
 
 .tree-node {
   display: inline-block;
-  min-width: 180px;
-  padding: 10px 20px;
+  min-width: 200px;
+  padding: 5px 20px;
   margin: 3px 0;
   border-radius: 6px;
   border: 2px solid #7da7d9;

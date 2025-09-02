@@ -110,15 +110,26 @@ function App() {
         </div>
       </div>
       <div className="right-panel">
-        <h2>Node Detail</h2>
         {selectedNode ? (
-          <NodeHandler
-            node={selectedNode}
-            tree={dataTree}
-            moveNode={moveNode}
-            setDataTree={setDataTree}
-            findNodeByCode={findNodeByCode}
-          />
+          <div className="container mt-4">
+            <div className="d-flex justify-content-between align-items-center mb-3">
+              <h4>{selectedNode.name}</h4>
+              <div>
+                <button className="btn btn-primary btn-sm me-2">+ Add</button>
+                <button className="btn btn-secondary btn-sm">✎ Edit</button>
+              </div>
+            </div>
+
+            <div className="mb-3">
+              <NodeHandler
+                node={selectedNode}
+                tree={dataTree}
+                moveNode={moveNode}
+                setDataTree={setDataTree}
+                findNodeByCode={findNodeByCode}
+              />
+            </div>
+          </div>
         ) : (
           <p>Select a node to see details</p>
         )}
