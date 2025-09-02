@@ -30,7 +30,7 @@ function App() {
 
   const recalcKeys = (node: TreeNode, parentKey: string | null) => {
     if (!parentKey) {
-      node.node_key = "1"; // root
+      node.node_key = "1";
     } else {
       node.node_key = parentKey;
     }
@@ -42,6 +42,17 @@ function App() {
       });
     }
   };
+
+  function findNodeByCode(root: TreeNode, code: string): TreeNode | null {
+    if (root.node_key === code) return root;
+    if (!root.children) return null;
+
+    for (const child of root.children) {
+      const found = findNodeByCode(child, code);
+      if (found) return found;
+    }
+    return null;
+  }
 
   const moveNode = (
     tree: TreeNode,
@@ -106,6 +117,7 @@ function App() {
             tree={dataTree}
             moveNode={moveNode}
             setDataTree={setDataTree}
+            findNodeByCode={findNodeByCode}
           />
         ) : (
           <p>Select a node to see details</p>

@@ -25,7 +25,7 @@ const TreeView: React.FC<TreeNodeProps> = ({
   onSelect,
   ancestorPath = [],
 }) => {
-  const [expanded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState(ancestorPath.length === 0);
 
   const isSelected = selected === node.node_key;
   const isAncestor = ancestors.includes(node.node_key ?? "");
